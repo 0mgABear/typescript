@@ -37,4 +37,23 @@ const logNumber: (i: number) => void = (i: number) => {
 // Use annotations
 // 1: Fn that returns the 'any' type
 const json = '{"x": 10, "y": 20}';
-const coordinates = JSON.parse(json);
+const coordinates: { x: number; y: number } = JSON.parse(json);
+
+// 2. declare var on 1 line & initialise later
+let words = ["red", "green", "blue"];
+let foundWord: boolean; //annotating here
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "green") {
+    foundWord = true;
+  }
+}
+
+// 3. variable whose type cannot be inferred correctly
+let numbers = [-10, -1, 12];
+let numberAboveZero: boolean | number;
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
