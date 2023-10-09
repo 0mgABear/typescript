@@ -32,3 +32,28 @@ JSON.parse() : one of the many fns that returns the "any" type
 - Be careful with object destructuring!
 
 # Section 5 : Mastering Typed Arrays
+
+- Arrays where each element is a consistent type of value
+
+# Section 6: Tuples in Typescript
+
+- Tuples : array-like structure, each element represents some property of a record
+- Fixed order
+- Might not be used often in Ts
+
+# Section 7: The All-Important Interface
+
+- Interfaces : creates a new type, describes property names and value types of an object
+- Can fix long annotations just by accessing Interfaces
+
+# Section 8: Building Functionality with Classes
+
+# Section 9 : Design Patterns with Typescript
+
+# Section 10: More on Design Patterns
+
+# Section 11 : Reusable Code
+
+# Section 12 : Advanced Generics
+
+# Section 12 : Build a Web Framework
