@@ -48,6 +48,22 @@ JSON.parse() : one of the many fns that returns the "any" type
 
 # Section 8: Building Functionality with Classes
 
+- Classes : blueprint to create an object with some fields (values) and methods (functions) to represent a 'thing'
+
+Difference between ES2015 classes vs TS classes
+
+Modifiers : keywords that can be placed on different methods and properties inside of a class.
+
+Goals: restrict access to different functions or different variables.
+
+Modifier Options:
+
+- public (default) : this method can be called anywhere, anytime.
+- private: this method can only be called by other methods in this class. To restrict access to a function.
+- protected : can only be called by other methods in this class or by other methods in child classes.
+
+Constructor : a special function needed to pass arguments into a class when creating an instance of it.
+
 # Section 9 : Design Patterns with Typescript
 
 # Section 10: More on Design Patterns
