@@ -76,6 +76,14 @@ Constructor : a special function needed to pass arguments into a class when crea
 - Using implements tells Ts to help us satisfy the requirements of a particular interface. Ts does additional checking and can point us to the true source of the error.
 - Implements is optional! But it helps us , helps other engineers for better code clarity. It allows Ts to help us better pinpoint the source of errors better!
 
+## Type Guard
+
+- used to restore access to a set of properties in a union type
+- typeof : number, string, booleaan, symbol
+  - e.g. typeof var === "string"
+- instanceof : every other value that is created with a constructor function
+  - e.g. variable instanceOf Array/etc
+
 # Section 10: More on Design Patterns
 
 - tsconfig.json : Ts compiler configuration file that customises how the compiler behaves.
@@ -96,6 +104,7 @@ Bubble Sort Algorithm Used for this particular section.
 
 - check on a particular variable, clarify the type of value we are going to be working with
 - by clarifying the type we are working with, it restores access to all the different properties associated with the original type, instead of just the common methods when working with a union.
+- not necessarily the best code format
 
 # Section 11 : Reusable Code
 
