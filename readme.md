@@ -66,10 +66,31 @@ Constructor : a special function needed to pass arguments into a class when crea
 
 # Section 9 : Design Patterns with Typescript
 
+- file whose primary purpose is to create an export / class : usually capitalise
+- avoid default exports
+- pay attention to whenever you have duplicated code / code that looks very similar : think about can they be extracted out?
+- if there's duplicate code, can consider using Interfaces!
+- when using an OR ("|") operator, Ts will only allow us to access / use properties if it exists on both Types!
+- A value can have multiple types if it fulfills the requirement of a Interface (e.g type User and type Mappable)
+
 # Section 10: More on Design Patterns
 
 # Section 11 : Reusable Code
 
 # Section 12 : Advanced Generics
 
-# Section 12 : Build a Web Framework
+# Section 13 : Build a Web Framework
+
+# Section 14 : Express + Ts Integration
+
+# Section 15 : Decorators
+
+# Section 16 : Advanced Express + Ts Integration
+
+# Section 17: React and Redux Class Components with Ts
+
+# Section 18: React Functional Components with Ts
+
+# Section 19: Redux with Functional Components and Ts
+
+# Section 20: Extras
