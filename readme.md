@@ -60,7 +60,7 @@ Modifier Options:
 
 - public (default) : this method can be called anywhere, anytime.
 - private: this method can only be called by other methods in this class. To restrict access to a function.
-- protected : can only be called by other methods in this class or by other methods in child classes.
+- protected : can only be called by other methods in this class or by other methods in child classes of parent class.
 
 Constructor : a special function needed to pass arguments into a class when creating an instance of it.
 
@@ -72,8 +72,30 @@ Constructor : a special function needed to pass arguments into a class when crea
 - if there's duplicate code, can consider using Interfaces!
 - when using an OR ("|") operator, Ts will only allow us to access / use properties if it exists on both Types!
 - A value can have multiple types if it fulfills the requirement of a Interface (e.g type User and type Mappable)
+- Implements: We want to make sure a sub-class satisfy all the requirements / properties of the interface. This allows for better error and code checking.
+- Using implements tells Ts to help us satisfy the requirements of a particular interface. Ts does additional checking and can point us to the true source of the error.
+- Implements is optional! But it helps us , helps other engineers for better code clarity. It allows Ts to help us better pinpoint the source of errors better!
 
 # Section 10: More on Design Patterns
+
+- tsconfig.json : Ts compiler configuration file that customises how the compiler behaves.
+- to create a tsconfig.json file: tsc --init
+- to create a package.json file: npm init -y
+- tsc -w : watch all the files within the root directory : any time the code is changed, compiler will automatically recompile and stick it into the output directory.
+- npm packages used: nodemon & concurrently
+- node reruns Node any time a file changes inside the project
+
+Bubble Sort Algorithm Used for this particular section.
+
+- after first iteration, greatest element is guaranteed to be on RHS
+- in future iterations, will not have to consider the last element
+- not the fastest! not recommended to use, only specifically for this project
+- every string has an ASCII value, can be found out via charCodeAt. Comparison of strings behind the scenes uses these numbers.
+
+## Type Guards:
+
+- check on a particular variable, clarify the type of value we are going to be working with
+- by clarifying the type we are working with, it restores access to all the different properties associated with the original type, instead of just the common methods when working with a union.
 
 # Section 11 : Reusable Code
 
