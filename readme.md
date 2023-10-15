@@ -106,7 +106,51 @@ Bubble Sort Algorithm Used for this particular section.
 - by clarifying the type we are working with, it restores access to all the different properties associated with the original type, instead of just the common methods when working with a union.
 - not necessarily the best code format
 
+## Inheritance :
+
+- extending properties to share
+- reminder: child must call a super() function to use parent methods
+
+## Abstract Classes:
+
+- can't be used to create an object directly -> can't create an instance of it
+- can only be used as a parent class
+- can contain real implementation for some methods
+- implemented methods can refer to other methods that don't exist yet
+- can make child classes promise to implement some other method
+- use abstract before the class, then declare the abstract properties within the class
+
+- If a child class has no constructor, no need to call super().
+
+## Interfaces VS Abstract Classes
+
+### Interfaces:
+
+- set up "contract" between classes
+- use when we have very different objects that we want them to work together
+- promotes loose coupling
+
+### Inheritance / Abstract Classes:
+
+- Sets up "contract" between classes
+- Use when trying to build up a definition of an object
+- Strongly couples classes together
+
 # Section 11 : Reusable Code
+
+Refresher:
+
+- npm init -y : package.json file
+- tsc --init : tsconfig file
+- npm install @types/node
+
+- fs.readFileSync : can read any type of file
+- encoding : what's the expected value
+- utf:8 : return a string
+
+## Using Enums:
+
+- enumerations : object that stores closely related values
 
 # Section 12 : Advanced Generics
 
