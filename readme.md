@@ -151,6 +151,40 @@ Refresher:
 ## Using Enums:
 
 - enumerations : object that stores closely related values
+- near-identical syntax rules as normal objects
+- creates an object with same keys and values when converted from Ts to Js
+- small fixed set of values, known at compile time
+
+Refresher: define your own tuple with type
+
+## Generics :
+
+- like function arguments, but for types in class/function definitions
+- allow us to define the type of a property/argument/return value at a future point
+- used heavily when writing reusable code
+- using <> : use eexactly like how a function works
+  - example: class HoldAnything<TypeOfData> {data: TypeOfData}
+
+## Inheritance vs Composition:
+
+- Inheritance: abstract class CSVFileReader, used it to make a child class MatchReader.
+
+  - Parent class with core functionality around a CSV file reader.
+  - Extended the class, customised child class and behaviour.
+  - Characterised by a "is a" relationship between 2 classes.
+
+- Composition: have a class MatchReader , which referenced other object (DataReader)
+  - Reader property needs to satisfy DataReader interface.
+  - can swap in styles easily to customise how MatchReader behaves (e.g. reading from API or from CSV)
+  - Characterised by a "has a" relationship between 2 classes
+
+### More on Inheritance vs Composition:
+
+- Favor delegation as a way to implement composition.
+
+---
+
+- Static Methods can be called without calling an instance.
 
 # Section 12 : Advanced Generics
 
