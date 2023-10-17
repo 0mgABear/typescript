@@ -188,7 +188,12 @@ Refresher: define your own tuple with type
 
 # Section 12 : Advanced Generics
 
+No new comments or notes.
+
 # Section 13 : Build a Web Framework
+
+Model Classes: handle data, used to rep users, blog posts, images etc
+View Classes: handle HTML and events caused by user (e.g. clicks)
 
 # Section 14 : Express + Ts Integration
 
