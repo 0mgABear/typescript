@@ -195,6 +195,10 @@ No new comments or notes.
 Model Classes: handle data, used to rep users, blog posts, images etc
 View Classes: handle HTML and events caused by user (e.g. clicks)
 
+- IN Js/Ts, all object keys are strings.
+- Can use generic types on functions as well.
+- Keys of an object can be a type as well.
+
 # Section 14 : Express + Ts Integration
 
 # Section 15 : Decorators
