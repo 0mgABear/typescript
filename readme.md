@@ -198,6 +198,7 @@ View Classes: handle HTML and events caused by user (e.g. clicks)
 - IN Js/Ts, all object keys are strings.
 - Can use generic types on functions as well.
 - Keys of an object can be a type as well.
+- Be flexible : don't have to always strictly use inheritance/composition just because it has some specific advantages or disadvantages. Swap as and when needed as the situation calls for it.
 
 # Section 14 : Express + Ts Integration
 
