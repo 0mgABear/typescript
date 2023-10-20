@@ -200,6 +200,9 @@ View Classes: handle HTML and events caused by user (e.g. clicks)
 - Keys of an object can be a type as well.
 - Be flexible : don't have to always strictly use inheritance/composition just because it has some specific advantages or disadvantages. Swap as and when needed as the situation calls for it.
 
+- Element refers to any HTML element.
+- Template element turns some stirng into actual HTMl that can be inserted into the DOM.
+
 # Section 14 : Express + Ts Integration
 
 # Section 15 : Decorators
