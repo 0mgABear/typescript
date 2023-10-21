@@ -172,6 +172,7 @@ Refresher: define your own tuple with type
   - Parent class with core functionality around a CSV file reader.
   - Extended the class, customised child class and behaviour.
   - Characterised by a "is a" relationship between 2 classes.
+  - Basically child class literally "inheriting" some properties from a parent class.
 
 - Composition: have a class MatchReader , which referenced other object (DataReader)
   - Reader property needs to satisfy DataReader interface.
