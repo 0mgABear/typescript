@@ -206,6 +206,34 @@ View Classes: handle HTML and events caused by user (e.g. clicks)
 
 # Section 14 : Express + Ts Integration
 
+TS with JS libraries:
+
+- Use the lib normally, adding in basic type annotations whre possible
+- Use a TS adapter library that has helpers for using the lib with TS
+- Twist your lib to work with TS classes.
+
+- Remember to install @types/(3rd party library) to use with Ts
+- Express does not automatically parse the contents of a form .
+  - need to use body-parser middleware
+
+## Body Parser middleware
+
+- submit: submit HTTP request over internet to a server
+- has a server, also has information attached to the body of the request
+- body has some info, but it's in encoded state.
+- express generates a request object, e.g. IP and hostname and others.
+- by default, a request object does NOT have a body property.
+- the Request object is passed into the BodyParser middleware, which inspects the incoming HTTP request. BodyParser parse the information and attach to the Request object.
+
+One of the most important jobs of Ts:
+
+- understand the different properties than an object has.
+
+Technically the 3rd party libraries are counter-productive to what Ts does.
+
+- TS has no idea what's going inside the middleware. Middleware in general attempt to modify the diff properties on the request and response objects. TS has no way to be informed about the presence / the change of these different properties.
+- sometimes type definition files tell the wrong story as well.
+
 # Section 15 : Decorators
 
 # Section 16 : Advanced Express + Ts Integration
