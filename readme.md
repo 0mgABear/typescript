@@ -232,7 +232,12 @@ One of the most important jobs of Ts:
 Technically the 3rd party libraries are counter-productive to what Ts does.
 
 - TS has no idea what's going inside the middleware. Middleware in general attempt to modify the diff properties on the request and response objects. TS has no way to be informed about the presence / the change of these different properties.
+
 - sometimes type definition files tell the wrong story as well.
+
+- inputs to a server / program with external inputs: not guaranteed to exist or be of the correct type.
+
+- PROs: force us to write better code.
 
 # Section 15 : Decorators
 
