@@ -241,6 +241,33 @@ Technically the 3rd party libraries are counter-productive to what Ts does.
 
 # Section 15 : Decorators
 
+- funciton that can be used to modify/change/mess around different properties/methods in a class.
+- NOT the same as Js decorators.
+- Used inside/on classes only!
+- Understanding the order in which decorators are ran is key to understanding them.
+- Experimental!
+
+## Decorators on a property, method or accessor
+
+- First argument is the prototype of the object
+- Second argument is the key of the property/method/acessor on the object
+- Third argument: property descriptor
+- Applied when the code for the class is ran, not when an instance is created.
+
+## Property Descriptor for Methods:
+
+- object meant to configure a property on another object.
+- have the following :
+  - writable: property can be changed or not
+  - enumerable: whether or not this property get looped over by a "for...in"
+  - value: current value
+  - configurable: property definition whether the configuration can be changed and whether the property can be deleted.
+- Decorator Factory:
+  - Decorator that returns a function.
+  - Most commonly seen.
+
+Decorators can be used inside function arguments as well.
+
 # Section 16 : Advanced Express + Ts Integration
 
 # Section 17: React and Redux Class Components with Ts
