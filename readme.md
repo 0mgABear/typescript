@@ -270,10 +270,55 @@ Decorators can be used inside function arguments as well.
 
 # Section 16 : Advanced Express + Ts Integration
 
+Optional section!
+
 # Section 17: React and Redux Class Components with Ts
+
+Pros :
+
+- easier to avoid extremely common types, like incorrect action types
+- better understanding of type of data flowing around
+- easier to refactor
+
+## Cons:
+
+- not the best type definition files
+- tons of generics
+- tons of imports
+- redux inherently funcitonal in nature, tough integration with TS classes
+
+Usually define class based components with a interface above to describe the props to take in.
 
 # Section 18: React Functional Components with Ts
 
-# Section 19: Redux with Functional Components and Ts
+Not too much is going to change
 
-# Section 20: Extras
+- applying types to component props
+- applying types to state in a component
+- types with event handlers
+
+Need an interface to define what props a Child component expects to receive
+
+- TS checks if correct props are provided
+- correctly named and typed props in child?
+- Downside: TS might not understand that it's a React Component.
+
+All React components can optionally provide these properties:
+
+- propTyes
+- displayName
+- defaultProps
+- contextTypes
+  - Ts doesn't know it's a React ocmponent, so it thinks that "Child" will not have the properties.
+
+Declare as React.FC!
+
+- Tells TS that it is specifically a React function component.
+- MIGHT have properties assigned to it like those listed above.
+- Will receive props of certain types.
+
+Can declare the type of state after useState within <>
+
+Type inference only works for function defined inline, won't get passed ahead of time even when the function is initialised within the same component.
+
+# Section 19: Redux with Functional Components and Ts
